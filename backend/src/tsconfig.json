@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es6", "dom"],  // Add "node" for Node.js globals
+    "mapRoot": "../build/server",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "../build/server",
+    "sourceMap": true,
+    "target": "es6",
+    "typeRoots": ["../node_modules/@types", "../src/index.d.ts"],
+    "strict": true,                  // Enable strict mode
+    "noImplicitAny": true,           // Disallow implicit 'any'
+    "esModuleInterop": true,         // Allow default imports for CommonJS modules
+    "resolveJsonModule": true,       // Allow importing JSON files
+    "skipLibCheck": true             // Skip type checking for external libraries
+  },
+  "include": [
+    "src/**/*.ts"                    // Include all TypeScript files in 'src'
+  ],
+  "exclude": [
+    "node_modules"                   // Exclude 'node_modules' from compilation
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "abi": [],
+  "_format": "hh-sol-artifact-1",
+  "contractName": "BondingCurveFactory",
+  "sourceName": "contracts/BondingCurveFactory.sol",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "note": "PLACEHOLDER - Replace this file after running 'npx hardhat compile' by copying from: contracts/artifacts/contracts/BondingCurveFactory.sol/BondingCurveFactory.json"
+}

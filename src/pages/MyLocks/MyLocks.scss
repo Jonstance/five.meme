@@ -1,0 +1,91 @@
+.my_locks {
+    width: 100%;
+
+    main.locks_wrapper {
+        width: 100%;
+        padding: 30px 20px 100px 20px;
+        background-color: var(--theme-dark-blue);
+        min-height: calc(100vh - 80px);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        @media (max-width:1100px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .left {
+            margin-right: 50px;
+
+            @media (max-width:1100px) {
+                width: 95%;
+                margin-right: 0px;
+                margin-bottom: 50px;
+            }
+        }
+
+        .lock_card {
+            width: 40%;
+            padding: 30px 20px;
+            background-color: white;
+            border-radius: 15px;
+
+            @media (max-width:1100px) {
+                width: 95%;
+            }
+
+            .title {
+                display: block;
+                width: 100%;
+                font-weight: bold;
+                text-align: left;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            hr.rule {
+                width: 100%;
+                background-color: rgb(106, 106, 106);
+                background-color: rgb(106, 106, 106);
+                margin-bottom: 20px;
+            }
+
+            .card_row {
+                width: 100%;
+                margin-bottom: 20px;
+                display: flex;
+
+                span {
+                    display: block;
+                    word-wrap: break-word;
+                }
+
+                .l {
+                    text-align: left;
+                    width: 30%;
+                }
+
+                .r {
+                    text-align: right;
+                    width: 70%;
+                }
+
+                .adr {
+                    font-weight: bold;
+                    color: #f3ba2f;
+                }
+            }
+
+            .unlock {
+                padding: 10px 40px;
+                cursor: pointer;
+                background-color: #f3ba2f;
+                width: fit-content;
+                margin: 20px auto;
+                border-radius: 10px;
+            }
+        }
+    }
+}

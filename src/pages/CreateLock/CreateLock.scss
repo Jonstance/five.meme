@@ -1,0 +1,88 @@
+.create_lock {
+    width: 100%;
+    background-color: var(--theme-dark-blue);
+
+    .lock_form {
+        padding-top: 45px;
+        margin: 0 auto;
+        min-height: calc(100vh - 80px);
+        width: 90%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        input {
+            width: 100%;
+            background-color: var(--theme-dark-blue);
+            border-radius: 17px;
+            border: 2px solid #f3ba2f;
+            height: 60px;
+            padding-left: 20px;
+            color: white;
+            outline: none;
+            margin-bottom: 50px;
+
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        .input_group {
+            width: 100%;
+            position: relative;
+            margin-bottom: 50px;
+
+            span {
+                position: absolute;
+                display: inline-block;
+                padding: 7px 15px;
+                background-color: white;
+                top: -22px;
+                left: 20px;
+                border-radius: 10px;
+            }
+
+            input {
+                margin-bottom: 0;
+            }
+        }
+
+        .note {
+            width: 100%;
+            padding: 20px 15px;
+            background-color: #f3ba2f;
+            border-radius: 10px;
+            font-size: 14px;
+
+            span {
+                display: inline-block;
+                margin-bottom: 5px;
+            }
+
+            .adr {
+                color: white;
+                font-weight: bold;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+            img {
+                width: 12px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .submit {
+            padding: 10px 45px;
+            background-color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 40px;
+            border-radius: 7px;
+        }
+    }
+}

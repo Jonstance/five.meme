@@ -1,0 +1,157 @@
+.page_1 {
+  width: 100%;
+  background-color: var(--theme-dark-blue);
+}
+
+.page_1 main.page_main {
+  padding: 40px 20px;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.items_wrapper {
+  width: 100%;
+  max-width: 500px;
+  background: #1c1c28;
+  padding: 2rem;
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+
+.required_label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f3ba2f;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.input_group_1 {
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+
+.group_1_label {
+  margin-bottom: 0.5rem;
+}
+
+.group_1_label .mt {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.group_1_label .ast {
+  color: #f3ba2f;
+  font-size: 1rem;
+}
+
+.group_1_input input[type="text"],
+.group_1_input input[type="number"],
+.group_1_input input[type="date"] {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 0.95rem;
+  background-color: #fff;
+  color: #090917;
+  outline: none;
+}
+
+.group_1_note {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #f3ba2f;
+}
+
+.token_info {
+  margin: 2rem 0 1.5rem;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 1rem 0;
+}
+
+.token_info .ti_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.token_info .ti_row span.data {
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.token_info .ti_row span.value {
+  color: #f3ba2f;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.currency_details {
+  margin-bottom: 2rem;
+}
+
+.currency_details span {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.currency_details .currency {
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.currency_details .symbol {
+  color: #f3ba2f;
+}
+
+.notice {
+  font-size: 0.9rem;
+  color: #f3ba2f;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.warning_card {
+  background-color: #fdfae1;
+  color: #443800;
+  border: 2px solid #fdebad;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.form_buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.form_buttons button {
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  background-color: #f3ba2f;
+  font-weight: bold;
+  color: #090917;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.form_buttons button:hover {
+  background-color: #fce76a;
+}

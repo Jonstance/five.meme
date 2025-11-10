@@ -1,0 +1,425 @@
+.presale_list {
+  width: 100%;
+}
+
+.presale_list .list_wrapper {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  background-color: var(--theme-dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+}
+
+@media (max-width: 1100px) {
+  .presale_list .list_wrapper {
+    padding: 30px 10px;
+  }
+}
+
+.presale_list .list_wrapper .badge_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.presale_list .list_wrapper .badge_wrapper .badge {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+@media (max-width: 1000px) {
+  .presale_list .list_wrapper .badge_wrapper .badge {
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+}
+
+.presale_list .list_wrapper .badge_wrapper .badge img {
+  margin-right: 10px;
+}
+
+.presale_list .list_wrapper .badge_wrapper .badge span {
+  color: black;
+  font-weight: bold;
+}
+
+.presale_list .list_wrapper .search_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1100px) {
+  .presale_list .list_wrapper .search_section {
+    width: 90%;
+  }
+}
+
+.presale_list .list_wrapper .search_section .top {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media (max-width: 1100px) {
+  .presale_list .list_wrapper .search_section .top {
+    width: 100%;
+  }
+}
+
+.presale_list .list_wrapper .search_section .top span {
+  display: block;
+  margin-bottom: 10px;
+  color: #2184C7;
+  width: 150px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.presale_list .list_wrapper .search_section .top div {
+  width: 120px;
+  height: 5px;
+  background-color: #2184C7;
+  margin-bottom: 20px;
+}
+
+.presale_list .list_wrapper .search_section .top input {
+  border: none;
+  border-radius: 10px;
+  width: 350px;
+  height: 30px;
+  padding-left: 10px;
+  outline: none;
+}
+
+@media (max-width: 1100px) {
+  .presale_list .list_wrapper .search_section .top input {
+    width: 100%;
+  }
+}
+
+.presale_list .list_wrapper .pools {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.presale_list .list_wrapper .pools .pool {
+  width: 350px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .presale_list .list_wrapper .pools .pool {
+    width: 100vw;
+  }
+}
+
+.presale_list .list_wrapper .pools .pool .name {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #2184C7;
+  font-weight: bold;
+}
+
+.presale_list .list_wrapper .pools .pool .rw1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presale_list .list_wrapper .pools .pool .rw1 .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.presale_list .list_wrapper .pools .pool .rw1 .btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.presale_list .list_wrapper .pools .pool .rw1 .btns div {
+  padding: 6px 10px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #1c1c1c;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  text-transform: uppercase;
+}
+
+.presale_list .list_wrapper .pools .pool .rw1 .btns .safu {
+  border: 2px solid #F3BA2F;
+  color: #F3BA2F;
+}
+
+.presale_list .list_wrapper .pools .pool .rw1 .btns .audit {
+  border: 2px solid #627EEA;
+  color: #627EEA;
+}
+
+.presale_list .list_wrapper .pools .pool .rw1 .btns .kyc {
+  border: 2px solid #EC1B6C;
+  color: #EC1B6C;
+}
+
+.presale_list .list_wrapper .pools .pool .rw2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.presale_list .list_wrapper .pools .pool .rw2 span {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.presale_list .list_wrapper .pools .pool .rw2 .s1 {
+  font-weight: bold;
+  font-size: 20px;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+}
+
+.presale_list .list_wrapper .pools .pool .rw2 .s2 {
+  color: #6b6b6b;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.presale_list .list_wrapper .pools .pool .rw3 {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.presale_list .list_wrapper .pools .pool .rw3 span {
+  display: block;
+  text-align: left;
+  word-wrap: break-word;
+  font-weight: bold;
+}
+
+.presale_list .list_wrapper .pools .pool .rw3 .val {
+  color: #2184C7;
+  font-size: 20px;
+}
+
+.presale_list .list_wrapper .pools .pool .progress {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .s-a {
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .bar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  height: 7px;
+  border-radius: 10px;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .bar .fill {
+  height: 100%;
+  border-radius: inherit;
+  background-color: #36E39B;
+  transition: width 0.4s ease-in-out;
+
+}
+
+.presale_list .list_wrapper .pools .pool .progress .fill_count {
+  margin-top: 5px;
+  width: 100%;
+  text-align: right;
+  color: #717171;
+  font-size: 12px;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .vals {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .vals span {
+  display: block;
+  width: 50%;
+  color: #7e7e7e;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .vals .r {
+  text-align: right;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .groups {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .groups .rw {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .groups .rw span {
+  width: 50%;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .groups .rw .l {
+  font-weight: bold;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .groups .rw .r {
+  text-align: right;
+  color: #7d7d7d;
+}
+
+.dem {
+  color: black;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .status {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .status .l {
+  margin-right: 3px;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .vp {
+  margin: 30px 0px 20px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.presale_list .list_wrapper .pools .pool .progress .vp div {
+  padding: 10px 20px;
+  background-color: #f3ba2f;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.presale_list .list_wrapper .vmp {
+  margin-top: 20px;
+  margin: 30px 0px 20px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.presale_list .list_wrapper .vmp div {
+  padding: 10px 20px;
+  background-color: #f3ba2f;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.presale_list .list_wrapper .pools .pool {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.presale_list .list_wrapper .pools .pool:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  .presale_list .list_wrapper .pools .pool {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 14px;
+    padding: 15px;
+  }
+}
+.filter_controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.filter_controls span {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.filter_controls .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter_controls .filters button {
+  padding: 8px 16px;
+  border: none;
+  background: #f3f3f3;
+  color: #1c1c1c;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.filter_controls .filters button:hover {
+  background: #f3ba2f;
+  color: #000;
+}
+
+.filter_controls .filters button.active {
+  background: #f3ba2f;
+  color: #000;
+}
+

@@ -1,0 +1,423 @@
+// 🎨 Design System Variables
+// Based on four.meme's visual identity with neon green accents
+
+// ============================================
+// COLOR PALETTE
+// ============================================
+
+// Primary Colors
+$neon-green: #6CFF32;
+$neon-green-hover: #8fff5c;
+$neon-green-dark: #5ed428;
+
+// Background Colors
+$dark-bg: #0f0f0f;
+$card-bg: #1a1a1a;
+$elevated-bg: #222222;
+$border-color: #2a2a2a;
+$border-hover: #3a3a3a;
+
+// Text Colors
+$text-primary: #ffffff;
+$text-secondary: #888888;
+$text-muted: #666666;
+$text-disabled: #444444;
+
+// Status Colors
+$success: #00ff88;
+$error: #ff4444;
+$warning: #ffaa00;
+$info: #44aaff;
+
+// Gradient Colors
+$gradient-green: linear-gradient(135deg, $neon-green, $neon-green-hover);
+$gradient-dark: linear-gradient(180deg, $card-bg, $dark-bg);
+
+// ============================================
+// TYPOGRAPHY
+// ============================================
+
+// Font Families
+$font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+// Font Sizes
+$font-xs: 11px;
+$font-sm: 13px;
+$font-base: 15px;
+$font-lg: 18px;
+$font-xl: 24px;
+$font-2xl: 32px;
+$font-3xl: 48px;
+
+// Font Weights
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+$weight-extrabold: 800;
+
+// Line Heights
+$line-tight: 1.2;
+$line-normal: 1.5;
+$line-relaxed: 1.75;
+
+// ============================================
+// SPACING
+// ============================================
+
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 12px;
+$spacing-lg: 16px;
+$spacing-xl: 20px;
+$spacing-2xl: 24px;
+$spacing-3xl: 32px;
+$spacing-4xl: 48px;
+$spacing-5xl: 64px;
+
+// ============================================
+// BORDER RADIUS
+// ============================================
+
+$radius-sm: 6px;
+$radius-md: 8px;
+$radius-lg: 12px;
+$radius-xl: 16px;
+$radius-2xl: 20px;
+$radius-full: 9999px;
+
+// ============================================
+// SHADOWS
+// ============================================
+
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+$shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.25);
+
+// Neon Glow Shadows
+$shadow-neon-sm: 0 0 10px rgba(108, 255, 50, 0.2);
+$shadow-neon-md: 0 0 20px rgba(108, 255, 50, 0.3);
+$shadow-neon-lg: 0 0 30px rgba(108, 255, 50, 0.4);
+$shadow-neon-xl: 0 5px 40px rgba(108, 255, 50, 0.5);
+
+// ============================================
+// TRANSITIONS
+// ============================================
+
+$transition-fast: 0.15s ease;
+$transition-base: 0.2s ease;
+$transition-smooth: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// ============================================
+// Z-INDEX LAYERS
+// ============================================
+
+$z-base: 1;
+$z-dropdown: 100;
+$z-sticky: 200;
+$z-fixed: 300;
+$z-modal-backdrop: 400;
+$z-modal: 500;
+$z-popover: 600;
+$z-tooltip: 700;
+
+// ============================================
+// BREAKPOINTS
+// ============================================
+
+$breakpoint-xs: 480px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// ============================================
+// MIXINS
+// ============================================
+
+// Responsive breakpoints
+@mixin xs {
+  @media (max-width: #{$breakpoint-xs}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: #{$breakpoint-sm}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$breakpoint-md}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: #{$breakpoint-lg}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: #{$breakpoint-xl}) {
+    @content;
+  }
+}
+
+// Card style
+@mixin card {
+  background: $card-bg;
+  border: 1px solid $border-color;
+  border-radius: $radius-xl;
+  transition: all $transition-smooth;
+
+  &:hover {
+    border-color: $border-hover;
+  }
+}
+
+// Card with neon hover
+@mixin card-neon-hover {
+  @include card;
+
+  &:hover {
+    border-color: $neon-green;
+    box-shadow: $shadow-neon-md;
+  }
+}
+
+// Button base
+@mixin button-base {
+  padding: $spacing-md $spacing-xl;
+  border-radius: $radius-lg;
+  font-weight: $weight-bold;
+  font-size: $font-base;
+  cursor: pointer;
+  transition: all $transition-base;
+  border: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+// Primary button (neon green)
+@mixin button-primary {
+  @include button-base;
+  background: $neon-green;
+  color: $dark-bg;
+
+  &:hover:not(:disabled) {
+    background: $neon-green-hover;
+    transform: translateY(-2px);
+    box-shadow: $shadow-neon-lg;
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+  }
+}
+
+// Secondary button
+@mixin button-secondary {
+  @include button-base;
+  background: $card-bg;
+  color: $text-primary;
+  border: 1px solid $border-color;
+
+  &:hover:not(:disabled) {
+    border-color: $neon-green;
+    color: $text-primary;
+  }
+}
+
+// Danger button
+@mixin button-danger {
+  @include button-base;
+  background: $error;
+  color: $text-primary;
+
+  &:hover:not(:disabled) {
+    background: darken($error, 10%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 25px rgba(255, 68, 68, 0.4);
+  }
+}
+
+// Input field
+@mixin input-field {
+  width: 100%;
+  padding: $spacing-md $spacing-lg;
+  background: $dark-bg;
+  border: 1px solid $border-color;
+  border-radius: $radius-lg;
+  color: $text-primary;
+  font-size: $font-base;
+  outline: none;
+  transition: all $transition-smooth;
+
+  &:focus {
+    border-color: $neon-green;
+    box-shadow: $shadow-neon-sm;
+  }
+
+  &::placeholder {
+    color: $text-secondary;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+// Progress bar
+@mixin progress-bar($height: 10px) {
+  width: 100%;
+  height: $height;
+  background: $border-color;
+  border-radius: calc($height / 2);
+  overflow: hidden;
+
+  .progress-fill {
+    height: 100%;
+    background: $gradient-green;
+    border-radius: calc($height / 2);
+    transition: width $transition-slow;
+    box-shadow: $shadow-neon-sm;
+  }
+}
+
+// Neon text
+@mixin neon-text {
+  background: $gradient-green;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// Scrollbar styling
+@mixin custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $dark-bg;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $border-color;
+    border-radius: $radius-full;
+
+    &:hover {
+      background: $border-hover;
+    }
+  }
+}
+
+// Spinning animation
+@mixin spinner($size: 50px, $border-width: 4px) {
+  width: $size;
+  height: $size;
+  border: $border-width solid $border-color;
+  border-top-color: $neon-green;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+// Fade in animation
+@mixin fade-in($duration: $transition-smooth) {
+  animation: fadeIn $duration ease-in;
+}
+
+// ============================================
+// KEYFRAME ANIMATIONS
+// ============================================
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: $shadow-neon-sm;
+  }
+  50% {
+    box-shadow: $shadow-neon-lg;
+  }
+}
+
+// ============================================
+// UTILITY CLASSES
+// ============================================
+
+// Export as CSS custom properties for use in JS
+:root {
+  --neon-green: #{$neon-green};
+  --dark-bg: #{$dark-bg};
+  --card-bg: #{$card-bg};
+  --border-color: #{$border-color};
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+  --success: #{$success};
+  --error: #{$error};
+  --warning: #{$warning};
+  --info: #{$info};
+}

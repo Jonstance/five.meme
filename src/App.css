@@ -1,0 +1,13 @@
+
+/* Import our design system */
+@import './styles/design-system.css';
+
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 2000px;
+  position: relative;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-primary);
+}

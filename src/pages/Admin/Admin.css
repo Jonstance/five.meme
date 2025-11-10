@@ -1,0 +1,230 @@
+.admin {
+  width: 100%;
+}
+
+.admin main.page_wrapper {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  background-color: var(--theme-dark-blue);
+}
+
+.admin main.page_wrapper header {
+  width: 100%;
+  background-color: none;
+  padding-top: 30px;
+}
+
+.admin main.page_wrapper header h1 {
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: black;
+}
+
+.admin main.page_wrapper .login_form {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin main.page_wrapper .login_form form {
+  padding: 25px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 350px;
+  background-color: #f3ba2f;
+}
+
+.admin main.page_wrapper .login_form form title {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.admin main.page_wrapper .login_form form .input_g {
+  margin-bottom: 25px;
+}
+
+.admin main.page_wrapper .login_form form .input_g label {
+  display: block;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.admin main.page_wrapper .login_form form .input_g input {
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  padding-left: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.admin main.page_wrapper .login_form form .loginbtn {
+  padding: 10px 30px;
+  border-radius: 16px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.admin main.page_wrapper .top_s {
+  width: 100%;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.admin main.page_wrapper .top_s span {
+  font-weight: bold;
+  color: #EC1B6C;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.admin main.page_wrapper .top_s button {
+  border: none;
+  background-color: #203aa0;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.admin main.page_wrapper .search_c {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.admin main.page_wrapper .search_c input {
+  width: 90%;
+  max-width: 400px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 12px;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper {
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 20px;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool {
+  padding: 15px;
+  width: 320px;
+  background-color: #fff;
+  border: 2px solid #f3ba2f;
+  color: #000;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .top .pr_name {
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .top .pr_status {
+  color: white;
+  padding: 3px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .mid {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .mid .btn {
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .mid .x {
+  background-color: #f3ba2f;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .mid .y {
+  background-color: #EC1B6C;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .mid .x,
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .mid .y {
+  margin-right: 10px;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .mid .z {
+  background-color: #000;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .btm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .btm .btn_2 {
+  padding: 5px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .btm .view {
+  background-color: #627EEA;
+  color: white;
+}
+
+.admin main.page_wrapper .admin_pools_wrapper .wrapper .admin_pool .btm .cancel {
+  margin-left: 15px;
+  color: #627EEA;
+  border: 2px solid #f3ba2f;
+}

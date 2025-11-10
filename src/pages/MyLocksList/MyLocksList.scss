@@ -1,0 +1,90 @@
+.my_locks_list {
+    width: 100%;
+
+    main.page_wrapper {
+        width: 100%;
+        min-height: calc(100vh - 80px);
+        background-color: var(--theme-dark-blue);
+
+        .react_link {
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .locks_wrapper {
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .nl {
+                display: block;
+                width: 100%;
+                color: white;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .lock_card {
+                min-width: 300px;
+                padding: 30px 20px;
+                background-color: white;
+                border-radius: 15px;
+                margin: 20px;
+
+                .title {
+                    display: block;
+                    width: 100%;
+                    font-weight: bold;
+                    text-align: left;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+
+                hr.rule {
+                    width: 100%;
+                    background-color: rgb(106, 106, 106);
+                    background-color: rgb(106, 106, 106);
+                    margin-bottom: 20px;
+                }
+
+                .card_row {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    display: flex;
+
+                    span {
+                        display: block;
+                        word-wrap: break-word;
+                    }
+
+                    .l {
+                        text-align: left;
+                        width: 30%;
+                    }
+
+                    .r {
+                        text-align: right;
+                        width: 70%;
+                    }
+
+                    .adr {
+                        font-weight: bold;
+                        color: #f3ba2f;
+                    }
+                }
+
+                .view {
+                    padding: 10px 40px;
+                    cursor: pointer;
+                    background-color: #f3ba2f;
+                    width: fit-content;
+                    margin: 0 auto;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

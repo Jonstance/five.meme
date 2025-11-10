@@ -1,0 +1,334 @@
+.create_lock {
+  width: 100%;
+  background-color: var(--theme-dark-blue);
+}
+
+.create_lock .lock_form {
+  padding-top: 45px;
+  margin: 0 auto;
+  min-height: calc(100vh - 80px);
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.create_lock .lock_form input {
+  width: 100%;
+  background-color: var(--theme-dark-blue);
+  border-radius: 17px;
+  border: 2px solid #f3ba2f;
+  height: 60px;
+  padding-left: 20px;
+  color: white;
+  outline: none;
+  margin-bottom: 50px;
+}
+
+.create_lock .lock_form input::placeholder {
+  color: white;
+}
+
+.create_lock .lock_form .input_group {
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.create_lock .lock_form .input_group span {
+  position: absolute;
+  display: inline-block;
+  padding: 7px 15px;
+  background-color: white;
+  color: black;
+  top: -22px;
+  left: 20px;
+  border-radius: 10px;
+}
+
+.create_lock .lock_form .input_group input {
+  margin-bottom: 0;
+}
+
+.create_lock .lock_form .note {
+  width: 100%;
+  padding: 20px 15px;
+  background-color: #f3ba2f;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.create_lock .lock_form .note span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.create_lock .lock_form .note .adr {
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.create_lock .lock_form .note img {
+  width: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.create_lock .lock_form .submit {
+  padding: 10px 45px;
+  background-color: #f3ba2f;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 40px;
+  border-radius: 7px;
+}
+
+/* Enhanced DateTime Picker Styles */
+/* Add these styles to your CreateLock.css file */
+
+.time-presets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.preset-btn {
+    padding: 8px 16px;
+    border: 1px solid #007bff;
+    background-color: #ffffff;
+    color: #007bff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 80px;
+}
+
+.preset-btn:hover:not(:disabled) {
+    background-color: #007bff;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+.preset-btn:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 123, 255, 0.2);
+}
+
+.preset-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border-color: #dee2e6;
+}
+
+.datetime-picker-wrapper {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.datetime-picker-wrapper input[type="datetime-local"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.datetime-picker-wrapper input[type="datetime-local"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.datetime-picker-wrapper input[type="datetime-local"].error {
+    border-color: #dc3545;
+}
+
+.datetime-picker-wrapper input[type="datetime-local"].error:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.datetime-helper {
+    display: block;
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 6px;
+    font-style: italic;
+}
+
+.selected-time-display {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px;
+    background-color: #e8f4fd;
+    border: 1px solid #b3d9ff;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.selected-time-display span:first-child {
+    font-weight: 600;
+    color: #0056b3;
+    font-size: 14px;
+}
+
+.time-duration {
+    font-size: 12px;
+    color: #007bff;
+    font-weight: 500;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .time-presets {
+        flex-direction: column;
+        gap: 6px;
+    }
+    
+    .preset-btn {
+        flex: none;
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .selected-time-display {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .time-presets {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+    
+    .preset-btn {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+}
+
+/* Dark mode support (if your app supports it) */
+@media (prefers-color-scheme: dark) {
+    .time-presets {
+        background-color: #2d3748;
+        border-color: #4a5568;
+    }
+    
+    .preset-btn {
+        background-color: #2d3748;
+        color: #f3ba2f;
+        border-color: #f3ba2f;
+    }
+    
+    .preset-btn:hover:not(:disabled) {
+        background-color: #f3ba2f;
+        color: #1a202c;
+    }
+    
+    .datetime-picker-wrapper input[type="datetime-local"] {
+        background-color: #2d3748;
+        border-color: #4a5568;
+        color: #e2e8f0;
+    }
+    
+    .datetime-picker-wrapper input[type="datetime-local"]:focus {
+        border-color: #f3ba2f;
+    }
+    
+    .datetime-helper {
+        color: #a0aec0;
+    }
+    
+    .selected-time-display {
+        background-color: #2a4a6b;
+        border-color: #f3ba2f;
+    }
+    
+    .selected-time-display span:first-child {
+        color: #f3ba2f;
+    }
+    
+    .time-duration {
+        color: #f3ba2f;
+    }
+}
+
+/* Animation for preset button selection */
+@keyframes preset-selected {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.preset-btn.selected {
+    animation: preset-selected 0.2s ease;
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #ffffff;
+}
+
+/* Improved datetime input styling for better UX */
+.datetime-picker-wrapper input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background-color: #f3ba2f;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.datetime-picker-wrapper input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover {
+    background-color: #f3ba2f;
+}
+
+/* Loading state for preset buttons */
+.preset-btn.loading {
+    position: relative;
+    color: transparent;
+}
+
+.preset-btn.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    border: 2px solid #dee2e6;
+    border-top-color: #f3ba2f;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
